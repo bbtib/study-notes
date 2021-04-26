@@ -1,2 +1,2 @@
-# This repo is used for record study notes only
+# This repo is used for recording study notes only
 
