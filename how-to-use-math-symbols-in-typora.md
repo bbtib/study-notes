@@ -431,18 +431,18 @@ $$
 
 * script letters: $\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ 𝖺𝖻𝖼𝖽𝖾𝖿𝗀𝗁𝗂𝗃𝗄𝗅𝗆𝗇𝗈𝗉𝗊𝗋𝗌𝗍𝗎𝗏𝗐𝗑𝗒𝗓}$
 
-  ## 加减乘除：
+## 加减乘除：
   $ \times \div \pm \mp$
 
-  ## Central dot: 
+## Central dot: 
 
   $x \dot y, x \cdot y $
 
-  ## Set
+## Set
 
-  ## $\cup \cap \setminus \subset \subseteq \subsetneq \supset \in \notin \emptyset \varnothing$
+## $\cup \cap \setminus \subset \subseteq \subsetneq \supset \in \notin \emptyset \varnothing$
 
-  ## And or not, forall, exists, ... 
+## And or not, forall, exists, ... 
 
   $ \land \lor \lnot \forall \exists \top \bot \vdash \vDash$
 
