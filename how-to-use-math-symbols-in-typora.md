@@ -6,7 +6,18 @@ Typora supports rendering normal mathematics using `Tex/LaTeX` syntax. The rende
 
 [TOC]
 
+# Commands supported by MathJax
+
+http://docs.mathjax.org/en/latest/input/tex/macros/index.html
+
+https://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm
+
+
+
+
+
 # Math Block (Display Math)
+
 Math blocks are `LaTeX` expressions wrapped by `$$` mark and line break, for example:
 
 ```Markdown
@@ -119,7 +130,7 @@ Now list 2 price: \$15.0, \$20.1
 
 ## Square: $X^2$
 
-## Square root: $\sqrt{100}$
+## Square root: $\sqrt{100}, \sqrt[3]{x \over y}$
 
 ## Divide or fraction 
 
@@ -171,17 +182,31 @@ $$
 ## Arrows
 
 $$
-  {\displaystyle \leftarrow }	\leftarrow	{\displaystyle \Leftarrow }	\Leftarrow
-  {\displaystyle \rightarrow }	\rightarrow	{\displaystyle \Rightarrow \;}	\Rightarrow
-  {\displaystyle \leftrightarrow }	\leftrightarrow	{\displaystyle \rightleftharpoons }	\rightleftharpoons
-  {\displaystyle \uparrow }	\uparrow	{\displaystyle \downarrow }	\downarrow
-  {\displaystyle \Uparrow \;}	\Uparrow	{\displaystyle \Downarrow }	\Downarrow
-  {\displaystyle \Leftrightarrow \;}	\Leftrightarrow	{\displaystyle \Updownarrow }	\Updownarrow
-  {\displaystyle \mapsto }	\mapsto	{\displaystyle \longmapsto \;}	\longmapsto
-  {\displaystyle \nearrow }	\nearrow	{\displaystyle \searrow }	\searrow
-  {\displaystyle \swarrow }	\swarrow	{\displaystyle \nwarrow }	\nwarrow
-  {\displaystyle \leftharpoonup }	\leftharpoonup	{\displaystyle \rightharpoonup }	\rightharpoonup
-  {\displaystyle \leftharpoondown }	\leftharpoondown	{\displaystyle \rightharpoondown }	\rightharpoondown	
+{\displaystyle \leftarrow }	\leftarrow	{\displaystyle \Leftarrow }	\Leftarrow\\
+
+  {\displaystyle \rightarrow }	\rightarrow	{\displaystyle \Rightarrow \;}	\Rightarrow\\
+  
+  {\displaystyle \leftrightarrow }	\leftrightarrow	\\
+  {\displaystyle \rightleftharpoons }	\rightleftharpoons\\
+  {\displaystyle \uparrow }	\uparrow	{\displaystyle \Uparrow \;}	\Uparrow \\
+  {\displaystyle \downarrow }	\downarrow
+  {\displaystyle \Downarrow }	\Downarrow \\
+  {\displaystyle \Leftrightarrow \;}	\Leftrightarrow	 \\
+  {\displaystyle \Updownarrow }	\Updownarrow \\
+  {\displaystyle \mapsto }	\mapsto	\\
+  {\displaystyle \longmapsto \;}	\longmapsto \\
+
+  {\displaystyle \nearrow }	\nearrow	\\
+  {\displaystyle \searrow }	\searrow  \\
+  
+  {\displaystyle \swarrow }	\swarrow	\\
+  {\displaystyle \nwarrow }	\nwarrow\\
+  {\displaystyle \leftharpoonup }	\leftharpoonup	{\displaystyle \rightharpoonup }	\\
+  \rightharpoonup\\
+  
+  {\displaystyle \leftharpoondown }	\leftharpoondown	 \\
+  {\displaystyle \rightharpoondown }	\rightharpoondown  \\
+  \to \\
 $$
 
 ## Miscellaneous symbols
@@ -348,9 +373,10 @@ f(x) = \sum_{i=0}^{n} \frac{a_i}{1+x} \\
 \scriptscriptstyle f(x) = \scriptscriptstyle \sum_{i=0}^{n} \frac{a_i}{1+x}
 $$
 
-## Binomials
+## Binomials or choose
 $$
-\binom{n}{k} = \frac{n!}{k!(n-k)!}
+\binom{n}{k} = \frac{n!}{k!(n-k)!} \\
+{n+1 \choose 2k}
 $$
 
 ## Sin , Cos
@@ -363,5 +389,75 @@ col1 | col2
 -----|-----
 ![image-20210426210531648](how-to-use-math-symbols-in-typora.assets/image-20210426210531648.png) | ![image-20210426210625553](how-to-use-math-symbols-in-typora.assets/image-20210426210625553.png) 
 
+## Compare and Not euqal
 
+
+$$
+a\gvertneqq b\\
+c \neq b \\
+\lt \gt \le \leq \leqq \leqslant \ge \geq \geqq \geqslant \neq
+$$
+
+
+## Fonts
+
+
+
+* blackboard bold
+
+$$
+\Bbb{ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ} \\ 
+\mathbb{ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ}
+$$
+
+* boldface
+  $$
+  \mathbf{𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙  𝐚𝐛𝐜𝐝𝐞𝐟𝐠𝐡𝐢𝐣𝐤𝐥𝐦𝐧𝐨𝐩𝐪𝐫𝐬𝐭𝐮𝐯𝐰𝐱𝐲𝐳.}
+  $$
+
+* Bold symbol: $\boldsymbol{\alpha}$
+
+* Italics $\mathit{ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz}$
+
+* bold face italics: $\pmb{𝐴𝐵𝐶𝐷𝐸𝐹𝐺𝐻𝐼𝐽𝐾𝐿𝑀𝑁𝑂𝑃𝑄𝑅𝑆𝑇𝑈𝑉𝑊𝑋𝑌𝑍𝐴𝐵𝐶𝐷𝐸𝐹𝐺𝐻𝐼𝐽𝐾𝐿𝑀𝑁𝑂𝑃𝑄𝑅𝑆𝑇𝑈𝑉𝑊𝑋𝑌𝑍ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ 𝑎𝑏𝑐𝑑𝑒𝑓𝑔ℎ𝑖𝑗𝑘𝑙𝑚𝑛𝑜𝑝𝑞𝑟𝑠𝑡𝑢𝑣𝑤𝑥𝑦𝑧𝑎𝑏𝑐𝑑𝑒𝑓𝑔ℎ𝑖𝑗𝑘𝑙𝑚𝑛𝑜𝑝𝑞𝑟𝑠𝑡𝑢𝑣𝑤𝑥𝑦𝑧abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz}$
+
+* Type writer: $\mathtt{𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙹𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉ABCDEFGHIJKLMNOPQRSTUVWXYZ 𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚓𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣}$
+
+* Roman font: $\mathrm{ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz}$
+
+* sans-serif font: $\mathsf{𝖠𝖡𝖢𝖣𝖤𝖥𝖦𝖧𝖨𝖩𝖪𝖫𝖬𝖭𝖮𝖯𝖰𝖱𝖲𝖳𝖴𝖵𝖶𝖷𝖸𝖹ABCDEFGHIJKLMNOPQRSTUVWXYZ 𝖺𝖻𝖼𝖽𝖾𝖿𝗀𝗁𝗂𝗃𝗄𝗅𝗆𝗇𝗈𝗉𝗊𝗋𝗌𝗍𝗎𝗏𝗐𝗑𝗒𝗓}$
+
+* calligraphic: $\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ 𝖺𝖻𝖼𝖽𝖾𝖿𝗀𝗁𝗂𝗃𝗄𝗅𝗆𝗇𝗈𝗉𝗊𝗋𝗌𝗍𝗎𝗏𝗐𝗑𝗒𝗓}$
+
+* script letters: $\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ 𝖺𝖻𝖼𝖽𝖾𝖿𝗀𝗁𝗂𝗃𝗄𝗅𝗆𝗇𝗈𝗉𝗊𝗋𝗌𝗍𝗎𝗏𝗐𝗑𝗒𝗓}$
+
+  ## 加减乘除：
+  $ \times \div \pm \mp$
+
+  ## Central dot: 
+
+  $x \dot y, x \cdot y $
+
+  ## Set
+
+  ## $\cup \cap \setminus \subset \subseteq \subsetneq \supset \in \notin \emptyset \varnothing$
+
+  ## And or not, forall, exists, ... 
+
+  $ \land \lor \lnot \forall \exists \top \bot \vdash \vDash$
+
+
+## `\approx \sim \simeq \cong \equiv \prec \lhd \therefore` 
+$\approx \sim \simeq \cong \equiv \prec \lhd \therefore$
+
+## `\infty \aleph_0` ∞ℵ0 `\nabla \partial` ∇, ∂ `\Im \Re` ℑ, ℜ
+
+## $a\equiv b\pmod n, a\equiv b, \pmod n$
+
+## dots
+
+$$
+a_1 + a_2 + \ldots, a_n \\
+a_1 + a_2 + \cdots, a_n \\
+$$
 
